@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+{% block first %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Transfer</button>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+{% block first %}
+
+  <a href="{% url 'transfer' %}">
+    <button class="submit_button">Transefer</button>
+</a>
+<a href="{% url 'transaction_history' %}">
+  <button class="submit_button">View Transaction History</button>
+</a>
+<a href="{% url 'bill_payment' %}">
+  <button class="submit_button">Bill Payment</button>
+</a>
+<a href="{% url 'bill_payment_history' %}">
+  <button class="submit_button">Bill Payment History</button>
+</a>
+
+{% endblock %}
+{% block second %}
+
+{% endblock %}

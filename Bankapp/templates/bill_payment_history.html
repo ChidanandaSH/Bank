@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block first %}
+<h2>Bill Payment History</h2>
+<ul>
+    {% for payment in payments %}
+        <li>{{ payment.biller_name }} - {{ payment.amount }} - {{ payment.status }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block first %}
+<h2>Pay Your Bills</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Pay</button>
+</form>
+{% endblock %}
